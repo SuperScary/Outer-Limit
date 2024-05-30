@@ -39,10 +39,4 @@ public class ModTabs
         return itemLike;
     }
 
-    public static <T extends Block> DeferredBlock<T> addBlockToTab (DeferredBlock<T> itemLike)
-    {
-        TAB_ITEMS.add(itemLike);
-        return itemLike;
-    }
-
 }
