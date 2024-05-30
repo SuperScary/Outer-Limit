@@ -22,6 +22,7 @@ public class ModBlocks
     public static final DeferredBlock<Block> MAGNESIUM_DEEPSLATE_ORE = reg("magnesium_deepslate_ore", () -> new ModExperienceBlock(Blocks.DEEPSLATE_IRON_ORE));
     public static final DeferredBlock<Block> MAGNESIUM_NETHER_ORE = reg("magnesium_nether_ore", () -> new ModExperienceBlock(Blocks.DEEPSLATE_IRON_ORE));
     public static final DeferredBlock<Block> MAGNESIUM_BLOCK = reg("magnesium_block", () -> new ModBlock(Blocks.IRON_BLOCK));
+    public static final DeferredBlock<Block> MAGNESIUM_BLOCK_RAW = reg("magnesium_block_raw", () -> new ModBlock(Blocks.RAW_IRON_BLOCK));
 
     public static final DeferredBlock<Block> MOON_DUST_BLOCK = reg("moon_dust_block", () -> new ModBlock(Blocks.STONE));
 

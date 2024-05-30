@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 1.5,
+  "ingredient": {
+    "item": "outerlimit:magnesium_nether_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "outerlimit:magnesium_ingot"
+  }
+}

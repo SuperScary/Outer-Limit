@@ -1,4 +1,4 @@
-package superscary.outerlimit.datagen;
+package superscary.outerlimit.datagen.state;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
@@ -30,25 +30,30 @@ public class ModBlockStateProvider extends BlockStateProvider
         blockWithItem(ModBlocks.MAGNESIUM_BLOCK);
     }
 
-    private void leavesBlock(DeferredBlock<Block> blockRegistryObject) {
+    private void leavesBlock (DeferredBlock<Block> blockRegistryObject)
+    {
         simpleBlockWithItem(blockRegistryObject.get(),
                 models().cubeAll(Registries.BLOCK.registry().getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
-    private void saplingBlock(DeferredBlock<Block> blockRegistryObject) {
+    private void saplingBlock (DeferredBlock<Block> blockRegistryObject)
+    {
         simpleBlock(blockRegistryObject.get(),
                 models().cross(Registries.BLOCK.registry().getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
-    private void blockItem(DeferredBlock<Block> blockRegistryObject, String appendix) {
+    private void blockItem (DeferredBlock<Block> blockRegistryObject, String appendix)
+    {
         simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("outerlimit:block/" + Registries.BLOCK.registry().getPath() + appendix));
     }
 
-    private void blockItem(DeferredBlock<Block> blockRegistryObject) {
+    private void blockItem (DeferredBlock<Block> blockRegistryObject)
+    {
         simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("outerlimit:block/" + Registries.BLOCK.registry().getPath()));
     }
 
-    private void blockWithItem(DeferredBlock<Block> blockRegistryObject) {
+    private void blockWithItem (DeferredBlock<Block> blockRegistryObject)
+    {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 

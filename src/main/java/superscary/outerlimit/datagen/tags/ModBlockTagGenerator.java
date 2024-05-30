@@ -1,4 +1,4 @@
-package superscary.outerlimit.datagen;
+package superscary.outerlimit.datagen.tags;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
