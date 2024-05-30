@@ -1,13 +1,13 @@
 <p align="center"><img src="https://github.com/SuperScary/Outer-Limit/blob/779bc2dfa104ffe9a2920962b8f55c4215582173/src/main/resources/logo.png" alt="Logo" width="200"></p>
 
-<h1 align="center">Kinetic  <br>
+<h3 align="center">Outer Limit Stats<br>
 	<a href="https://www.curseforge.com/minecraft/mc-mods/outer-limit/files"><img src="https://cf.way2muchnoise.eu/versions/kinetic-base.svg" alt="Supported Versions"></a>
 	<a href="https://github.com/SuperScary/Kinetic/blob/main/LICENSE"><img src="https://img.shields.io/github/license/SuperScary/Kinetic" alt="License"></a>
 	<a href="https://discord.gg/gbG2VbTkfb"><img src="https://img.shields.io/discord/1088229138583797780?color=5865f2&label=Discord&style=flat" alt="Discord"></a>
 	<a href="https://www.curseforge.com/minecraft/mc-mods/outer-limit"><img src="http://cf.way2muchnoise.eu/957493.svg" alt="CF"></a>
   <a href="https://modrinth.com/mod/outer-limit"><img src="https://img.shields.io/modrinth/dt/kinetic-base?logo=modrinth&label=&suffix=%20&style=flat&color=242629&labelColor=5ca424&logoColor=1c1c1c" alt="Modrinth"></a>
     <br><br>
-</h1>
+</h3>
 
 Outer Limit for Minecraft 1.20.6
 =======
