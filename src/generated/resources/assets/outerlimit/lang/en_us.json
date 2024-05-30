@@ -1,0 +1,14 @@
+{
+  "block.outerlimit.magnesium_block": "Magnesium Block",
+  "block.outerlimit.magnesium_deepslate_ore": "Magnesium Deepslate Ore",
+  "block.outerlimit.magnesium_moon_ore": "Magnesium Moon Ore",
+  "block.outerlimit.magnesium_nether_ore": "Magnesium Nether Ore",
+  "block.outerlimit.magnesium_ore": "Magnesium Ore",
+  "block.outerlimit.moon_dust_block": "Moon Dust Block",
+  "item.outerlimit.magnesium_ingot": "Magnesium Ingot",
+  "item.outerlimit.magnesium_nugget": "Magnesium Nugget",
+  "item.outerlimit.magnesium_plate": "Magnesium Plate",
+  "item.outerlimit.magnesium_raw": "Raw Magnesium",
+  "item.outerlimit.moon_dust": "Moon Dust",
+  "itemGroup.outerlimit": "Outer Limit"
+}
