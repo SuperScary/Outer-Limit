@@ -1,0 +1,11 @@
+{
+  "type": "outerlimit:moon_type",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "outerlimit:lunar_surface"
+    },
+    "settings": "outerlimit:lunar_surface"
+  }
+}

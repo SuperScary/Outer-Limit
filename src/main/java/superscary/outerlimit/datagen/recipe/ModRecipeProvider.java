@@ -6,13 +6,14 @@ import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.NotNull;
-import superscary.outerlimit.OuterLimitMod;
+import superscary.outerlimit.OL;
+import superscary.outerlimit.api.data.IOuterLimitDataProvider;
 import superscary.outerlimit.datagen.recipe.provider.FurnaceRecipeProvider;
 import superscary.outerlimit.datagen.recipe.provider.NormalCraftingTableRecipeProvider;
 
 import java.util.concurrent.CompletableFuture;
 
-public class ModRecipeProvider extends RecipeProvider
+public class ModRecipeProvider extends RecipeProvider implements IOuterLimitDataProvider
 {
 
     private final PackOutput packOutput;
@@ -34,7 +35,7 @@ public class ModRecipeProvider extends RecipeProvider
 
     public ResourceLocation getModId (String path)
     {
-        return OuterLimitMod.getResource(path);
+        return OL.getResource(path);
     }
 
     public PackOutput getPackOutput ()

@@ -8,10 +8,11 @@ import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import superscary.outerlimit.block.ModBlocks;
+import superscary.outerlimit.api.data.IOuterLimitDataProvider;
 
-import static superscary.outerlimit.OuterLimitMod.MODID;
+import static superscary.outerlimit.OL.MODID;
 
-public class ModBlockStateProvider extends BlockStateProvider
+public class ModBlockStateProvider extends BlockStateProvider implements IOuterLimitDataProvider
 {
 
     public ModBlockStateProvider (PackOutput packOutput, ExistingFileHelper existingFileHelper)
@@ -28,6 +29,7 @@ public class ModBlockStateProvider extends BlockStateProvider
         blockWithItem(ModBlocks.MAGNESIUM_DEEPSLATE_ORE);
         blockWithItem(ModBlocks.MOON_DUST_BLOCK);
         blockWithItem(ModBlocks.MAGNESIUM_BLOCK);
+        blockWithItem(ModBlocks.MAGNESIUM_BLOCK_RAW);
     }
 
     private void leavesBlock (DeferredBlock<Block> blockRegistryObject)
@@ -55,6 +57,11 @@ public class ModBlockStateProvider extends BlockStateProvider
     private void blockWithItem (DeferredBlock<Block> blockRegistryObject)
     {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
+    }
+
+    private void blockWithItem (Block block)
+    {
+        simpleBlockWithItem(block, cubeAll(block));
     }
 
 }

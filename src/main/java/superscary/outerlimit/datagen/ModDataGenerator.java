@@ -5,7 +5,6 @@ import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import superscary.outerlimit.datagen.lang.ModEnLangProvider;
 import superscary.outerlimit.datagen.loot.ModBlockLootTables;
@@ -19,7 +18,7 @@ import superscary.outerlimit.datagen.world.ModWorldGenProvider;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.BiFunction;
 
-import static superscary.outerlimit.OuterLimitMod.MODID;
+import static superscary.outerlimit.OL.MODID;
 
 @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD)
 public class ModDataGenerator

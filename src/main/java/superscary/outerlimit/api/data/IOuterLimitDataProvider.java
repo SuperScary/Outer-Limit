@@ -1,4 +1,4 @@
-package superscary.outerlimit.datagen;
+package superscary.outerlimit.api.data;
 
 import net.minecraft.data.DataProvider;
 

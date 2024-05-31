@@ -7,7 +7,7 @@ import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import superscary.outerlimit.block.ModBlocks;
-import superscary.outerlimit.datagen.IOuterLimitDataProvider;
+import superscary.outerlimit.api.data.IOuterLimitDataProvider;
 import superscary.outerlimit.datagen.recipe.ModRecipeProvider;
 import superscary.outerlimit.item.ModItems;
 

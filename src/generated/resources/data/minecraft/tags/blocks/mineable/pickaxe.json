@@ -5,6 +5,7 @@
     "outerlimit:magnesium_ore",
     "outerlimit:magnesium_nether_ore",
     "outerlimit:magnesium_deepslate_ore",
+    "outerlimit:magnesium_block_raw",
     "outerlimit:magnesium_block"
   ]
 }

@@ -1,21 +1,16 @@
 package superscary.outerlimit.datagen.model;
 
-import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
-import superscary.outerlimit.OuterLimitMod;
-import superscary.outerlimit.block.ModBlocks;
-import superscary.outerlimit.datagen.IOuterLimitDataProvider;
+import superscary.outerlimit.OL;
+import superscary.outerlimit.api.data.IOuterLimitDataProvider;
 import superscary.outerlimit.item.ModItems;
 
-import static superscary.outerlimit.OuterLimitMod.MODID;
+import static superscary.outerlimit.OL.MODID;
 
 public class ModItemModelProvider extends ItemModelProvider implements IOuterLimitDataProvider
 {
@@ -40,7 +35,7 @@ public class ModItemModelProvider extends ItemModelProvider implements IOuterLim
     {
         withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
-                OuterLimitMod.getResource("item/" + item.getId().getPath()));
+                OL.getResource("item/" + item.getId().getPath()));
     }
 
 }

@@ -1,14 +1,14 @@
 package superscary.outerlimit.datagen.lang;
 
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.LanguageProvider;
 import superscary.outerlimit.block.ModBlocks;
+import superscary.outerlimit.api.data.IOuterLimitDataProvider;
 import superscary.outerlimit.item.ModItems;
 
-import static superscary.outerlimit.OuterLimitMod.MODID;
+import static superscary.outerlimit.OL.MODID;
 
-public class ModEnLangProvider extends LanguageProvider
+public class ModEnLangProvider extends LanguageProvider implements IOuterLimitDataProvider
 {
 
     public ModEnLangProvider (DataGenerator generator)

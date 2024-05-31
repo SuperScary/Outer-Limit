@@ -25,7 +25,7 @@ import net.minecraft.world.level.storage.loot.predicates.ExplosionCondition;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import org.jetbrains.annotations.NotNull;
 import superscary.outerlimit.block.ModBlocks;
-import superscary.outerlimit.datagen.IOuterLimitDataProvider;
+import superscary.outerlimit.api.data.IOuterLimitDataProvider;
 import superscary.outerlimit.item.ModItems;
 
 import java.nio.file.Path;
@@ -35,7 +35,7 @@ import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Function;
 
-import static superscary.outerlimit.OuterLimitMod.MODID;
+import static superscary.outerlimit.OL.MODID;
 
 public class ModBlockLootTables extends BlockLootSubProvider implements IOuterLimitDataProvider
 {

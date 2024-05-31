@@ -6,11 +6,12 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import superscary.outerlimit.api.block.OLBlock;
 import superscary.outerlimit.item.ModItems;
 
 import java.util.function.Supplier;
 
-import static superscary.outerlimit.OuterLimitMod.MODID;
+import static superscary.outerlimit.OL.MODID;
 
 public class ModBlocks
 {
@@ -21,10 +22,10 @@ public class ModBlocks
     public static final DeferredBlock<Block> MAGNESIUM_ORE = reg("magnesium_ore", () -> new ModExperienceBlock(Blocks.IRON_ORE));
     public static final DeferredBlock<Block> MAGNESIUM_DEEPSLATE_ORE = reg("magnesium_deepslate_ore", () -> new ModExperienceBlock(Blocks.DEEPSLATE_IRON_ORE));
     public static final DeferredBlock<Block> MAGNESIUM_NETHER_ORE = reg("magnesium_nether_ore", () -> new ModExperienceBlock(Blocks.DEEPSLATE_IRON_ORE));
-    public static final DeferredBlock<Block> MAGNESIUM_BLOCK = reg("magnesium_block", () -> new ModBlock(Blocks.IRON_BLOCK));
-    public static final DeferredBlock<Block> MAGNESIUM_BLOCK_RAW = reg("magnesium_block_raw", () -> new ModBlock(Blocks.RAW_IRON_BLOCK));
+    public static final DeferredBlock<Block> MAGNESIUM_BLOCK = reg("magnesium_block", () -> new OLBlock(Blocks.IRON_BLOCK));
+    public static final DeferredBlock<Block> MAGNESIUM_BLOCK_RAW = reg("magnesium_block_raw", () -> new OLBlock(Blocks.RAW_IRON_BLOCK));
 
-    public static final DeferredBlock<Block> MOON_DUST_BLOCK = reg("moon_dust_block", () -> new ModBlock(Blocks.STONE));
+    public static final DeferredBlock<Block> MOON_DUST_BLOCK = reg("moon_dust_block", () -> new OLBlock(Blocks.STONE));
 
     public static <T extends Block> DeferredBlock<T> reg (final String name, final Supplier<? extends T> supplier)
     {
